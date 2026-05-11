@@ -7,8 +7,8 @@ const app = express();
 app.use(bodyParser.json());
 
 // ENV VARIABLES
-const VERIFY_TOKEN = "your_verify_token";
-const ACCESS_TOKEN = "your_whatsapp_access_token";
+const VERIFY_TOKEN = "aiarthub123";
+const ACCESS_TOKEN = "EAAVFZAdxHALkBRS9X3ZCijYQM8vq2oNRYk0q9opm6mbCoLiSDkZAVq3ZCgC0MLToXTkPkCCZAxeEvowLfAU1UykKx33Upxu3i7ZCNjBDhrSmZBVR9WMD3DUSaYqaTp967XWJSDi2kp1SFJxio3h2KLZAnaqrPF9IQ9feyaDfZCBufXFqz0u2YwkoYm9ZCOXe30MOjpUCDrlGNGN6ZB2ZBd42FwJn1ji3gfwCSzP72XeZCvjfAeE8ZCkGjHe7MJxUTQk5XkX5ZBkAYipZBotB8EdBB4oc75Ya2x5kfAZDZD";
 
 // Google Sheets Setup
 const auth = new google.auth.GoogleAuth({
@@ -16,7 +16,7 @@ const auth = new google.auth.GoogleAuth({
   scopes: ["https://www.googleapis.com/auth/spreadsheets"],
 });
 
-const spreadsheetId = "YOUR_SHEET_ID";
+const spreadsheetId = "1eq7QWd-SqoSEvQOs3Ohty5fLBHjgVqHS6yprl5SW2RI/edit?gid=0#gid=0";
 
 // Webhook Verify
 app.get("/webhook", (req, res) => {
